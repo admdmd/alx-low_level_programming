@@ -7,16 +7,18 @@
  */
 int main(void)
 {
-	int number;
-	char alphebet;
+int number;
+for (number = '0'; number <= '9'; number++)
+{
+putchar(number);
 
-	for (number = 0; number < 10; number++)
-		putchar(number + '0');
-
-	for (alphebet = 'a'; alphebet <= 'f'; alphebet++)
-		putchar(alphebet);
-	putchar('\n');
-
-	return (0);
+if (number != '9')
+{
+putchar(',');
+putchar(' ');
 }
 
+}
+putchar('\n');
+return (0);
+}
