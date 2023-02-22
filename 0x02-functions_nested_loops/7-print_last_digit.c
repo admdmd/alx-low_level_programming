@@ -5,7 +5,7 @@
 *@n : the passed args
 *Return : the x
 */
-int print_last_digit(int n);
+int print_last_digit(int n)
 {
 int x;
 
@@ -18,3 +18,4 @@ return (x);
 }
 
 }
+
