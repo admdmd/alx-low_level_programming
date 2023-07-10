@@ -7,11 +7,11 @@
  */
 int get_endianness(void)
 {
-	unsigned int e;
-	char *f;
+	int x = 1;
+	char *e = (char *)&x;
 
-	x = 1;
-	f = (char *) &e;
+	if (*e == 1)
+		return (1);
 
-	return ((int)*f);
+	return (0);
 }
